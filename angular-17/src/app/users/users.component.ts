@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { MatListModule } from '@angular/material/list';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { UserCardComponent } from '../../shared/components/user-card/user-card.component';
+import { MatButtonModule } from '@angular/material/button';
+import { RouterModule } from '@angular/router';
 
 
 interface IUser {
@@ -30,7 +32,7 @@ interface IUser {
 @Component({
   selector: 'app-users',
   standalone: true,
-  imports: [CommonModule, MatListModule, HttpClientModule, UserCardComponent],
+  imports: [CommonModule, MatListModule, HttpClientModule, UserCardComponent, MatButtonModule, RouterModule],
   // host: { ngSkipHydration: 'true'},
   templateUrl: './users.component.html',
   styleUrl: './users.component.scss'
