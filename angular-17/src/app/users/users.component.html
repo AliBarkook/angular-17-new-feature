@@ -1,0 +1,31 @@
+<section class="d-flex flex-wrap justify-content-center">
+
+    <main class="d-flex justify-content-center align-items-center">
+        <div class="text-center">
+
+            <h1 style="font-size: 3rem;">scroll to see how deferrable view works</h1>
+            <h3 style="font-size: 2rem;">logging in console ...</h3>
+        </div>
+    </main>
+
+    <mat-list class="col-12 col-sm-4 row d-flex">
+
+        
+        @for (user of users | slice:0:5; track $index) {
+            @defer (on viewport) {
+                <app-user-card class="col-12" [username]="user.login"></app-user-card>
+            }
+            @loading {
+                <span>loading ...</span>
+            }
+            @placeholder {
+                <span>placeholder</span>
+            }
+        }
+        @empty {
+            <span>this is empty state</span>
+        }
+
+    </mat-list>
+
+</section>
