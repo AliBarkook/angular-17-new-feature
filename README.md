@@ -1,9 +1,7 @@
 # angular-17-new-feature
-new feature of angular version 17
 
-
-
-documents and references:
+i am implementing some of new angular17-new-features.
+documents and references that i`m using are added in readme:
 
 # Introducing Angular v17: 
 - https://blog.angular.io/introducing-angular-v17-4d7033312e4b
