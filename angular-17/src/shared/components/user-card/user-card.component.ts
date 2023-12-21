@@ -1,5 +1,5 @@
 import { Component, Input, SimpleChanges } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { CommonModule, NgOptimizedImage } from '@angular/common';
 import { MatCardModule } from '@angular/material/card';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { IUserInfo } from '../../interfaces/user.interface';
@@ -9,7 +9,7 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 @Component({
   selector: 'app-user-card',
   standalone: true,
-  imports: [CommonModule, MatCardModule, HttpClientModule, MatButtonModule, MatProgressSpinnerModule],
+  imports: [CommonModule, MatCardModule, HttpClientModule, MatButtonModule, MatProgressSpinnerModule, NgOptimizedImage],
   templateUrl: './user-card.component.html',
   styleUrl: './user-card.component.scss'
 })
