@@ -32,3 +32,6 @@ documents and references that i`m using are added in readme:
 
 # Hydration: 
 - https://angular.io/guide/hydration
+
+# Change to new builder:
+- https://github.com/alan-agius4/angular-cli-use-application-builder/commit/1defdb93a7f508662bc427439e51505668bf84cd#diff-2d2675bb4687601a5c7ccf707455132f90f3516a33716185687e5c41df59ac7dR32-R33
